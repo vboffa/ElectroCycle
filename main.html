@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>EcoCycle – Electronics Recycling</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    /* Simple Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.5;
+      color: #333;
+      background-color: #f0f0f0;
+    }
+
+    /* Header and Navigation */
+    header {
+      background-color: #4CAF50;
+      padding: 1rem;
+      text-align: center;
+      color: #fff;
+    }
+
+    header h1 {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: bold;
+      transition: color 0.2s ease;
+    }
+
+    nav ul li a:hover {
+      color: #efefef;
+    }
+
+    /* Hero Section */
+    .hero {
+      background-color: #e5ffe5;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    .hero h2 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      max-width: 600px;
+      margin: 0 auto 1.5rem auto;
+    }
+
+    .hero button {
+      padding: 0.75rem 1.5rem;
+      border: none;
+      cursor: pointer;
+      font-size: 1rem;
+      background-color: #4CAF50;
+      color: #fff;
+      transition: background-color 0.2s ease;
+    }
+
+    .hero button:hover {
+      background-color: #45a049;
+    }
+
+    /* Sections */
+    section {
+      background-color: #fff;
+      margin: 2rem auto;
+      padding: 2rem;
+      max-width: 900px;
+      border-radius: 5px;
+    }
+
+    section h2 {
+      margin-bottom: 1rem;
+    }
+
+    /* Services or Steps */
+    .services-list,
+    .steps-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      list-style: none;
+      margin-top: 1rem;
+    }
+
+    .services-list li,
+    .steps-list li {
+      background-color: #f8f8f8;
+      padding: 1rem;
+      flex: 1 1 250px;
+      border-radius: 5px;
+    }
+
+    /* Donation Section */
+    .donation-info {
+      text-align: center;
+    }
+
+    .donation-info p {
+      margin-bottom: 1rem;
+    }
+
+    .donation-info button,
+    .donation-info a {
+      text-decoration: none;
+      padding: 0.75rem 1.5rem;
+      color: #fff;
+      background-color: #4CAF50;
+      border-radius: 5px;
+      transition: background-color 0.2s ease;
+    }
+
+    .donation-info button:hover,
+    .donation-info a:hover {
+      background-color: #45a049;
+    }
+
+    /* Contact Section */
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+      max-width: 400px;
+      margin: 0 auto;
+    }
+
+    .contact-form label {
+      font-weight: bold;
+    }
+
+    .contact-form input[type="text"],
+    .contact-form input[type="email"],
+    .contact-form textarea {
+      width: 100%;
+      padding: 0.5rem;
+      resize: vertical;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+    }
+
+    .contact-form button {
+      align-self: flex-start;
+      padding: 0.75rem 1.5rem;
+      background-color: #4CAF50;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.2s ease;
+    }
+
+    .contact-form button:hover {
+      background-color: #45a049;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #ddd;
+    }
+
+    @media (max-width: 600px) {
+      nav ul {
+        flex-direction: column;
+      }
+      .services-list,
+      .steps-list {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>EcoCycle</h1>
+    <nav>
+      <ul>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#process">Our Process</a></li>
+        <li><a href="#donate">Donate</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <div id="hero" class="hero">
+    <h2>Recycle Your Electronics with EcoCycle</h2>
+    <p>
+      Help us reduce electronic waste and protect our environment.
+      We offer safe and secure recycling services for all types of gadgets and devices.
+    </p>
+    <button>Learn More</button>
+  </div>
+
+  <!-- Services Section -->
+  <section id="services">
+    <h2>Our Services</h2>
+    <p>We handle a wide range of electronic recycling needs:</p>
+    <ul class="services-list">
+      <li>
+        <h3>Device Drop-Off</h3>
+        <p>Bring your old phones, laptops, or tablets to us, and we'll responsibly recycle or repurpose them.</p>
+      </li>
+      <li>
+        <h3>Data Destruction</h3>
+        <p>We guarantee secure data wiping and destruction before recycling your devices.</p>
+      </li>
+      <li>
+        <h3>Collection Drives</h3>
+        <p>Host an electronics recycling event at your office or in your community. We’ll handle the logistics.</p>
+      </li>
+    </ul>
+  </section>
+
+  <!-- Process Section -->
+  <section id="process">
+    <h2>How It Works</h2>
+    <ol class="steps-list">
+      <li>
+        <h4>1. Gather Your Devices</h4>
+        <p>Collect any unwanted or outdated electronics – phones, printers, cables, etc.</p>
+      </li>
+      <li>
+        <h4>2. Contact or Visit Us</h4>
+        <p>Use our contact form or drop by at our collection center.</p>
+      </li>
+      <li>
+        <h4>3. We Safely Recycle</h4>
+        <p>We handle disassembly, data destruction, and responsible disposal.</p>
+      </li>
+      <li>
+        <h4>4. Feel Good About It!</h4>
+        <p>Enjoy the peace of mind knowing you’ve kept e-waste out of landfills.</p>
+      </li>
+    </ol>
+  </section>
+
+  <!-- Donation Section -->
+  <section id="donate" class="donation-info">
+    <h2>Support EcoCycle</h2>
+    <p>We appreciate any contribution to further our mission of protecting the environment from electronic waste.</p>
+    <!-- Example PayPal Donation Button -->
+    <a href="https://www.paypal.com/donate?hosted_button_id=EXAMPLE" target="_blank" rel="noopener">Donate with PayPal</a>
+    <!-- Or a Ko-fi link -->
+    <!-- <a href="https://ko-fi.com/YourKoFiPage" target="_blank" rel="noopener">Support Us on Ko-fi</a> -->
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form class="contact-form" action="https://formspree.io/YOUREMAIL" method="POST">
+      <!-- For Formspree, replace YOUREMAIL with your actual email or set up a project on their site -->
+      <label for="name">Name</label>
+      <input type="text" name="name" id="name" placeholder="Your Name" required />
+
+      <label for="email">Email</label>
+      <input type="email" name="_replyto" id="email" placeholder="Your Email" required />
+
+      <label for="message">Message</label>
+      <textarea name="message" id="message" rows="4" placeholder="Your Message" required></textarea>
+
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 EcoCycle Electronics Recycling. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
