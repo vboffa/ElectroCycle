@@ -1,0 +1,6 @@
+.hero-image2 {
+  max-width: 100%;  /* Ensure it doesn't exceed its container's width */
+  height: auto;     /* Maintain aspect ratio */
+  margin-top: 1rem; /* Adds space between the text and image */
+  display: block;   /* Centers the image if you also add margin auto */
+}
