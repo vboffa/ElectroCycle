@@ -1,5 +1,5 @@
 .process-image {
   max-width: 300px; /* Image won't get wider than 300px */
-  width: 100%;      /* Image scales down if the container is smaller */
+  width: 50%;      /* Image scales down if the container is smaller */
   height: auto;
 }
