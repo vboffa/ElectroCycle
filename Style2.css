@@ -1,6 +1,5 @@
-.hero-image2 {
-  max-width: 100%;  /* Ensure it doesn't exceed its container's width */
-  height: auto;     /* Maintain aspect ratio */
-  margin-top: 1rem; /* Adds space between the text and image */
-  display: block;   /* Centers the image if you also add margin auto */
+.process-image {
+  max-width: 300px; /* Image won't get wider than 300px */
+  width: 100%;      /* Image scales down if the container is smaller */
+  height: auto;
 }
