@@ -1,6 +1,5 @@
-.hero {
-  max-width: 50%;
-  height: auto;
-  display: block;
-  margin: 0 auto 1.5rem auto; /* centers the image and adds spacing below it */
+.Frontpage {
+  width: 50%; /* Adjust percentage or use a fixed value like 500px */
+  height: auto; /* Maintains the aspect ratio */
 }
+
